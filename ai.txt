@@ -1,0 +1,7 @@
+ChatGPT Use Statement:
+
+For this assignment, I used AI as a support tool primarily for debugging, clarification, and code refinement. I sought help troubleshooting issues with my development environment, including problems activating a virtual environment, resolving pip installation errors, and correctly running a Flask application. I also used AI to better understand how to implement structured error handling with the `requests` module, especially in distinguishing between different types of request and response failures.
+
+In addition, I received guidance on refactoring my original code to improve organization and usability, particularly in separating API calls, data processing, and Flask route logic so that functions could be reused more effectively. Finally, I used AI to help generate HTML templates that matched my design goals, including creating form inputs, displaying results dynamically, and structuring pages with a base template.
+
+All core functionality, design decisions, and integration were implemented and adapted by me, with AI serving as a resource for troubleshooting, learning, and improving code structure.

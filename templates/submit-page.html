@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+
+<h2>Results</h2>
+
+{% if error %}
+    <p style="color:red;">{{ error }}</p>
+{% else %}
+    <p><strong>From:</strong> {{ city1 }}, {{ country1 }}</p>
+    <p><strong>To:</strong> {{ city2 }}, {{ country2 }}</p>
+    <p><strong>Mode:</strong> {{ mode }}</p>
+
+    <hr>
+
+    {% if mode == "car" %}
+        <p>Distance: {{ distance }} km</p>
+        <p>Duration: {{ duration }} seconds</p>
+    {% else %}
+        <p>Distance: {{ distance }} km</p>
+        <p>Duration: {{ duration }} seconds</p>
+        <p>Airports: {{ airports }}</p>
+    {% endif %}
+{% endif %}
+
+<a href="/">← Back</a>
+
+{% endblock %}

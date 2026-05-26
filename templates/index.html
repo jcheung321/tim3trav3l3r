@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h2>Travel Distance Calculator</h2>
+
+<form action="/submit-page" method="POST">
+    
+    <h3>Start Location</h3>
+    <input type="text" name="city1" placeholder="City" required>
+    <input type="text" name="country1" placeholder="Country" required>
+
+    <h3>End Location</h3>
+    <input type="text" name="city2" placeholder="City" required>
+    <input type="text" name="country2" placeholder="Country" required>
+
+    <br><br>
+
+    <label>Mode:</label>
+    <select name="mode">
+        <option value="car">Car</option>
+        <option value="flight">Flight</option>
+    </select>
+
+    <br><br>
+    <button type="submit">Calculate</button>
+</form>
+
+{% endblock %}

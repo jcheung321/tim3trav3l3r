@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link
+        rel="stylesheet"
+        href='{{ url_for("static", filename="style.css") }}'
+    />
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <h1><a href="/">HW5 - Time Travel Testing</a></h1>
+
+    {% block content %}{% endblock %}
+</body>
+</html>
